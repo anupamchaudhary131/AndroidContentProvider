@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:textSize="@dimen/headerSize"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/marginCommon"
+            android:textColor="@color/navyBlue"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tag"
+            android:gravity="center"
+            android:textSize="@dimen/headerSize"
+            android:textColor="@color/orange"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/studentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="name"
+            android:textColorHint="@color/grey"
+            android:layout_margin="@dimen/marginCommon"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/studentSchool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="School"
+            android:layout_margin="@dimen/marginCommon"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"/>
+
+        <Button
+            android:id="@+id/addStudentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:text="Add Student"
+            android:layout_margin="@dimen/marginCommon"
+            android:onClick="onClickAddStudent"/>
+
+        <Button
+            android:id="@+id/retrieveStudentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange"
+            android:layout_margin="@dimen/marginCommon"
+            android:text="Retrieve Student"
+            android:onClick="onClickRetrieveStudent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
